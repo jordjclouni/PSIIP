@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="keywords" content="Сайт - портфолио Артура Гапоника">
+        <title>Портфолио Артура Гапоника</title>
+    </head>
+    <body>
+        <!--верхняя панель сайта-->
+        <header>
+            <!--Навигация сайта-->
+            <nav>
+                <!--неупорядоченный список-->
+                <ul>
+                    <!--ссылки на html якори-->
+                    <li><a href="#section1">Главная</a></li>
+                    <li><a href="#section2">Обо мне</a></li>
+                    <li><a href="#section3">Услуги</a></li>
+                    <li><a href="#section4">Портфолио</a></li>
+                    <li><a href="#section5">Контакты</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <!--html-якорь-->
+                <h1 id="section1">Гапоник А.Т.</h1>
+                
+                <p>Приветствую вас на моем сайте - визитке, здесь я веб-дезайнер,
+                    программист, строитель, почти родитель - мастер на все руки</p>
+                    <a href="order.html"><input type="button" value="Заказать работу"> </input></a>
+            </section>
+            
+            <section>
+                <h1 id="section2">Обо мне</h1>
+                <ul>
+                    <li>
+                        
+                        <h1>Низкие цены</h1>
+                        <ul>
+                            <li>
+                                <h1>Идеальное соотнощение</h1>
+                            </li>
+                            
+                            <li>
+                                <h3>Цена качества</h3>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        
+                        <h1>Высокое качество</h1>
+                        <ul>
+                            <li>
+                                <h1>100</h1>
+                            </li>
+                            <li>
+                                <h3>Довольных клиентов</h3>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                    <li>
+                        <h1>Быстрое выполнение</h1>
+                        <ul>
+                            <li>
+                                <h1>Кротчайшие сроки</h1>
+                            </li>
+                            <li>
+                                <h3>Выполнения задач</h3>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            
+                <a href="#section4">Читать далее</a>
+            </section>
+
+            <section>
+                <!--обьявление изображения с определенной шириной и высотой-->   
+                <img src="img/arthur.jpg" width="180" height="320" alt="Артур">
+            </section>
+            
+            <section>
+                <h1>Мое образование</h1>
+                <!--тег таблицы-->
+                <table border="2px">
+                    
+                    <tr>
+                      <td>Первое образование:</td>
+                      <td>Среднее</td>
+                      <td>2012-2021</td>
+                    </tr>
+                    <tr>
+                        <td>Второе образование:</td>
+                        <td>Среднее специальное </td>
+                        <td>2021-2025</td>
+                    </tr>
+                    <tr>
+                        <td>Третье образование:</td>
+                        <td>Высшеее</td>
+                        <td>Скоро</td>
+                    </tr>
+                    
+                </table>
+            </section>
+            <section>
+                <h1 id="section3">Услуги</h1>
+                <ul>
+                    <li>
+                        <img src="#" width="100" height="100" alt="Веб-сайты">
+                        <h1>Веб-сайты</h1>
+                        <ul>
+                            <li>
+                                <h3>Создание сайтов-визиток</h3>
+                            </li>
+                            <li>
+                                <h3>Создание интернет магазинов</h3>
+                            </li>
+                            <li>
+                                <h3>Портфолио компании</h3>
+                            </li>
+                            <li>
+                                
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <img src="#" width="100" height="100" alt="Программирование">
+                        <h1>Программирование</h1>
+                        <ul>
+                            <li>
+                                <h3>Разработка программ на C#</h3>
+                            </li>
+                            <li>
+                                <h3>Разработка программ на Python</h3>
+                            </li>
+                            <li>
+                                <h3>Разработка игровых приложений</h3>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <img src="#" width="100" height="100" alt="Художества">
+                        <h1>Рисование</h1>
+                        <ul>
+                            <li>
+                                <h3>Создание логотипов</h3>
+                            </li>
+                            <li>
+                                <h3>Работа с Adobe Photoshop</h3>
+                            </li>
+                            <li>
+                                <h3>Работа с Cinema4D и Blender</h3>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <a href="portfolio/portfolio.html">Подробнее</a>
+            </section>
+
+
+            <section>
+                <h1 id="section4">Портфолио</h1>
+                <style>
+                    .slider-container {
+                        width: 600px;
+                        overflow: hidden;
+                        position: relative;
+                        margin: 0 auto;
+                    }
+                
+                    .slider {
+                        display: flex;
+                        transition: transform 0.5s ease;
+                    }
+                
+                    .slide {
+                        flex: 0 0 auto;
+                        width: 600px;
+                    }
+                
+                    .slider-btn {
+                        position: absolute;
+                        top: 50%;
+                        background-color: rgba(0, 0, 0, 0.5);
+                        color: #fff;
+                        padding: 10px;
+                        border: none;
+                        cursor: pointer;
+                    }
+                
+                    .slider-btn-left {
+                        left: 0;
+                    }
+                
+                    .slider-btn-right {
+                        right: 0;
+                    }
+                </style>
+                
+                
+                <div class="slider-container">
+                    <div class="slider">
+                        <div class="slide"><img src="img/hasbi.jpg" alt="Image 1"></div>
+                        <div class="slide"><img src="img/hasbi.jpg" alt="Image 2"></div>
+                        <div class="slide"><img src="img/hasbi.jpg" alt="Image 3"></div>
+                        <div class="slide"><img src="img/hasbi.jpg" alt="Image 4"></div>
+                        <div class="slide"><img src="img/hasbi.jpg" alt="Image 5"></div>
+                        <div class="slide"><img src="img/hasbi.jpg" alt="Image 6"></div>
+                    </div>
+                    <button class="slider-btn slider-btn-left" onclick="prevSlide()">←</button>
+                    <button class="slider-btn slider-btn-right" onclick="nextSlide()">→</button>
+                </div>
+                
+                <script>
+                    let slideIndex = 0;
+                
+                    function showSlides() {
+                        const slides = document.querySelectorAll('.slide');
+                        if (slideIndex >= slides.length) {
+                            slideIndex = 0;
+                        }
+                        if (slideIndex < 0) {
+                            slideIndex = slides.length - 1;
+                        }
+                        const offset = -slideIndex * slides[0].offsetWidth;
+                        document.querySelector('.slider').style.transform = `translateX(${offset}px)`;
+                    }
+                
+                    function nextSlide() {
+                        slideIndex++;
+                        showSlides();
+                    }
+                
+                    function prevSlide() {
+                        slideIndex--;
+                        showSlides();
+                    }
+                
+                    showSlides();
+                </script>
+                
+                
+            </section>
+            <section>
+                <video width="600" controls>
+                    <source src="vid/ken.mp4" type="video/mp4">
+                    
+                
+                </video>
+             </section>
+             <section>
+                <audio controls> <source src="aud/Bleeding Me.mp3"> Тег audio не поддерживается вашим браузером. <a href="aud/Bleeding Me.mp3">Скачайте музыку</a> </audio>
+            </section> 
+        </main>
+
+        <footer>
+        <h1 id="section5"></h1>
+        <h2>Используйте для связи</h2>
+        <ul>
+            <li>
+                <br>Тел: +375 33 6612488
+                <br>E-mail: gaponik.arthur@gmail.com
+                <br>github: jordjclouni
+            </li>
+        </ul>
+        <div>
+            <p>Давайте дружить!</p>
+            <ul>
+                <li><a href="https://vk.com/skankhunt___42">Вконтакте</a></li>
+                <li><a href="https://t.me/johnyclouni">Телеграм</a></li>
+                <li><a href="https://www.instagram.com/jajebaszyrap/">Инстаграм</a></li>
+                <li><a href="https://github.com/jordjclouni">Github</a></li>
+            </ul>
+        </div>
+        <p>
+            Разработано: Артуром Гапоником
+        </footer>
+    </body>
+</html>
