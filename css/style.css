@@ -9,7 +9,7 @@ body {
     text-transform: uppercase;
 
     background-color: white;
-    background-image: url(background.jpg);
+    background-image: url(# );
     background-position: center;
 }
 
@@ -30,9 +30,80 @@ a {
 .main-navigation a:hover,
 .main-navigation a:focus{background-color: antiquewhite;}
 
+.button{
+    border: 3px solid #000;
+    font: inherit;
+    text-align: center;
+    
+    color: white;
+    vertical-align: middle;
+    text-transform: uppercase;
+    background-color: black;
+    
+
+}
+.features {text-align: center;}
+.features h1{font-size: 50px;
+    line-height: 62px;
+}
 .features-list {list-style: none;}
 .feature-item{text-align: center;}
 .feature-item h3{
     font-size: 30px;
     line-height: 42px;
+}
+.gallery{
+background-color: antiquewhite;
+border: 7px solid #ffff;
+
+}
+.index-columns{
+color: black;
+background-color: rgb(255, 255, 255);
+}
+
+
+.uslugi {text-align: center;}
+.uslugi h1{font-size: 50px;
+    line-height: 62px;
+}
+.uslugi-list {list-style: none;}
+.uslugi-item{text-align: center;}
+.uslugi-item h3{
+    font-size: 30px;
+    line-height: 42px;
+}
+.main-footer{
+    color: black;
+
+    background-color: antiquewhite;
+    background-image: ();
+    background-position:  0 0;
+    background-repeat: repeat;
+}
+.footer-contacts a{
+    color:black;
+    text-decoration: underline;
+
+}
+
+.footer-contacts a:hover,
+.footer-contacts a:focus{
+    text-decoration: none;
+}
+
+.footer-social {
+    text-align: center;
+}
+
+.footer-social ul {
+    list-style: none;
+    
+ 
+}
+.social-button{
+    color: rgb(0, 0, 0);
+}
+.footer-copyright{
+    text-align: center;
 }
