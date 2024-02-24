@@ -4,23 +4,27 @@
         <meta charset="utf-8">
         <meta name="keywords" content="Сайт - портфолио Артура Гапоника">
         <title>Портфолио Артура Гапоника</title>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500..700&display=swap" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
          
     </head>
     <body>
         <!--верхняя панель сайта-->
         <header class="main-header">
             <!--Навигация сайта-->
-            <nav class="main-navigation">
-                <!--неупорядоченный список-->
-                <ul>
-                    <!--ссылки на html якори-->
-                    <li><a href="#section1">Главная</a></li>
-                    <li><a href="#section2">Обо мне</a></li>
-                    <li><a href="#section3">Услуги</a></li>
-                    <li><a href="#section4">Портфолио</a></li>
-                    <li><a href="#section5">Контакты</a></li>
-                </ul>
-            </nav>
+            <div main-navigation-wrapper>
+                <nav class="main-navigation">
+                    <!--неупорядоченный список-->
+                    <ul>
+                        <!--ссылки на html якори-->
+                        <li><a href="#section1">Главная</a></li>
+                        <li><a href="#section2">Обо мне</a></li>
+                        <li><a href="#section3">Услуги</a></li>
+                        <li><a href="#section4">Портфолио</a></li>
+                        <li><a href="#section5">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
         <main>
             <section>
@@ -35,7 +39,7 @@
 
             
             <section>
-                <h1 class="features" id="section2">Обо мне</h1>
+                <h2 class="features" id="section2">Обо мне</h2>
                 <ul class="features-list">
                     <li class="feature-item">
                     
@@ -57,8 +61,8 @@
                         
                     </li>
                 </ul>
-            
-                <a href="#section4">Читать далее</a>
+        
+                <a class="button" type="button" href="#section4">Читать далее</a>
             </section>
             <div class="index-columns">
                 <section class="gallery">
@@ -87,7 +91,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li>
+                        <li class="uslugi-item">
                             <img src="#" width="100" height="100" alt="Программирование">
                             <h2>Программирование</h2>
                             <ul>
@@ -102,7 +106,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li>
+                        <li class="uslugi-item">
                             <img src="#" width="100" height="100" alt="Художества">
                             <h2>Рисование</h2>
                             <ul>
@@ -210,15 +214,16 @@
 
         <footer class="main-footer">
         <h1 id="section5"></h1>
-        <h2 class="footer-contacts">Используйте для связи</h2>
-        <ul>
-            <li>
-                <br>Тел: +375 33 6612488
-                <br>E-mail: gaponik.arthur@gmail.com
-                <br>github: jordjclouni
-            </li>
-        </ul>
-        
+        <div class="footer-contacts">
+            <h2 >Используйте для связи</h2>
+            <ul>
+                <li>
+                    <br>Тел: +375 33 6612488
+                    <br>E-mail: gaponik.arthur@gmail.com
+                    <br>github: jordjclouni
+                </li>
+            </ul>
+        </div>
         <div class="footer-social">
             <b>Давайте дружить!</b>
             <ul>
