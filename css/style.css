@@ -5,13 +5,23 @@ body {
     font-size: 14px;
     line-height: 24px;
     font-weight: 500;
+
     color: black;
     text-transform: uppercase;
 
-    background-color: white;
+
+
+    background-color: antiquewhite;
     background-image: url(# );
     background-position: center;
 }
+
+  
+  h2.features {
+    font-family: "Overpass", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
 
 a {
     text-decoration: none;
@@ -28,7 +38,7 @@ ul {
     line-height: 30px;
     color: rgb(0, 0, 0);
 
-    background-color: rgb(255, 255, 255);
+    background-color: antiquewhite;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,8 +47,30 @@ ul {
 }
 .main-navigation a{ 
     color: black;
+    
+    
+    font: inherit;
+    font-size: 20px;
+    text-align: center;
+    
+    color: white;
+    vertical-align: middle;
+    text-transform: uppercase;
+    background-color: black;
+
+    display: inline-block;
+    padding: 5px 20px;
+    border-radius: 10px;
+    background-color: #b9954e; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+    
+    text-decoration: none; /* Убираем подчеркивание */
+    transition: background-color 0.3s;
 }
-.main-navigation a:hover {border-width: 10px;}
+.main-navigation a:hover {
+    background-color: #fff;
+    color: rgb(0, 0, 0);
+   }
 
 
 .main-navigation a:focus{background-color: antiquewhite;}
@@ -52,7 +84,7 @@ ul {
 .main-navigation ul {
     list-style-type: none; /* Убираем маркеры списка */
     display: flex; /* Устанавливаем flex-контейнер для списка */
-    margin: 0,0;
+    
 }
 
 .main-navigation li {
@@ -63,8 +95,38 @@ ul {
     text-decoration: none; /* Убираем подчеркивание у ссылок */
     color: #000000; /* Устанавливаем цвет текста для ссылок */
 }
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
 
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button {
+    margin-top: 10px; /* Отступ сверху для кнопки */
+}
+
+.container h3 {
+    display: flex;
+    justify-content:  space-between;
+    
+    flex-direction: row;
+}
+
+.container .button {
+    margin-top: 10px; /* Подберите нужный вам отступ сверху */
+}
 .button{
+    
     border: 1px solid #000;
     font: inherit;
     font-size: 20px;
@@ -91,72 +153,83 @@ ul {
 
 
 .features {
+    
     text-align: center;
     font-size: 50px; 
     color: rgb(102, 91, 52); }
-.features-list {list-style: none;}
+
+.features-list {list-style: none;
+    display: flex;
+    justify-content:  space-between;
+    justify-content:  space-around;
+    
+    flex-direction: row;
+    
+    
+}
 .feature-item{text-align: center;}
 .feature-item h3{
     font-size: 30px;
-    line-height: 42px;
-}
-
-
-
-
-
-.gallery{
-background-color: antiquewhite;
-border: 7px solid #ffff;
-
-}
-.index-columns{
-color: black;
-background-color: rgb(255, 255, 255);
-}
-
-
-.index-columns {
-    display: grid;
-    grid-template-columns: auto 1fr; /* Одна колонка для изображения, вторая для списка */
-    gap: 20px; /* Пространство между колонками */
-}
-
-.gallery img {
-    width: 500px; /* Ширина изображения */
-    height: 720px; /* Высота изображения */
-}
-
-.uslugi-list {
-    list-style: none; /* Убираем маркеры у списка */
-}
-
-.uslugi-item {
-    margin-bottom: 20px; /* Отступ между элементами списка */
-}
-
-
-
-
-.uslugi {text-align: center;
-font-size: 36px;}
-
-.uslugi-list {list-style: none;}
-.uslugi-item{text-align: center;}
-.uslugi-item h3{
-    font-size: 20px;
     line-height: 22px;
 }
+.feature-item p{
+    font-size: 18px;
+}
+
+
+.contain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    flex-direction: row; /* Добавлено */
+}
+
+.gallery {
+    margin-right: 10px;
+}
+
+.services {
+    flex-grow: 1; /* Добавлено */
+}
+
+.contain h1{
+    font-family: inherit;
+    font-size: 32px; 
+    margin: 0 0 10px 0;
+}
 
 
 
+.contain h2{
+    font-family: inherit;
+    font-size: 26px;
+}
 
-
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    font-family: "Overpass", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    justify-content: center; /* Выравнивание по вертикали по центру */
+    align-items: center; /* Выравнивание по горизонтали по центру */
+    /* Занимать всю высоту видимой области страницы */
+    margin: 0; /* Убрать отступы */
+}
+h2.portfolio {
+    padding: 20px;
+    font-family: "Overpass", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 30px;
+  }
 
 .main-footer{
     color: black;
 
-    background-color: antiquewhite;
+    background-color: rgb(248, 214, 170);
     background-image: ();
     background-position:  0 0;
     background-repeat: repeat;
@@ -175,6 +248,7 @@ font-size: 36px;}
 .footer-social {
     text-align: center;
 }
+
 
 .footer-social ul {
     list-style: none;
@@ -195,4 +269,41 @@ font-size: 36px;}
 
 .footer-section {
     flex: 1; /* Чтобы блоки занимали одинаковое пространство */
+}
+
+
+
+.slider-container {
+    width: 600px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    flex: 0 0 auto;
+    width: 600px;
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.slider-btn-left {
+    left: 0;
+}
+
+.slider-btn-right {
+    right: 0;
 }

@@ -5,8 +5,11 @@
         <meta name="keywords" content="Сайт - портфолио Артура Гапоника">
         <title>Портфолио Артура Гапоника</title>
         <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+        
         <link href="css/style.css" rel="stylesheet">
-         
+
+        <script src="js/script.js"></script>
     </head>
     <body>
         <!--верхняя панель сайта-->
@@ -27,15 +30,16 @@
             </div>
         </header>
         <main>
-            <section>
+            <section class="container">
                 <!--html-якорь-->
-                <h1 class="iam" id="section1">Гапоник А.Т.</h1>
+                <h1  id="section1">Гапоник А.Т.</h1>
                 
-                <p>Приветствую вас на моем сайте - визитке, здесь я веб-дезайнер,
-                    программист, строитель, почти родитель - мастер на все руки</p>
+                <h3>Приветствую вас на моем сайте - визитке, здесь я веб-дезайнер,
+                    программист, строитель, почти родитель - мастер на все руки</h3>
                     
-                    <a class="button" type="button" href="order.html">Заказать работу</a>
-                </section>
+                    <a class="button" type="button" href="order.html" target="_blank">Заказать работу</a>
+
+            </section>
 
             
             <section>
@@ -62,111 +66,60 @@
                     </li>
                 </ul>
         
+
+                
                 <a class="button" type="button" href="#section4">Читать далее</a>
             </section>
-            <div class="index-columns">
+
+
+            <div class="contain">
                 <section class="gallery">
-                    <!--обьявление изображения с определенной шириной и высотой-->   
-                    <img src="img/arthur.jpg" width="180" height="320" alt="Артур">
+                    <img src="img/arthur.jpg" width="400" height="635" alt="Артур">
                 </section>
-                
-                <section>
+                <section class="services">
                     <h1 class="uslugi" id="section3">Услуги</h1>
                     <ul class="uslugi-list">
                         <li class="uslugi-item">
-                            <img src="#" width="100" height="100" alt="Веб-сайты">
                             <h2>Веб-сайты</h2>
                             <ul>
-                                <li>
-                                    <h3>Создание сайтов-визиток</h3>
-                                </li>
-                                <li>
-                                    <h3>Создание интернет магазинов</h3>
-                                </li>
-                                <li>
-                                    <h3>Портфолио компании</h3>
-                                </li>
-                                <li>
-                                    
-                                </li>
+                                <li><h3>Создание сайтов-визиток</h3></li>
+                                <li><h3>Создание интернет магазинов</h3></li>
+                                <li><h3>Портфолио компании</h3></li>
                             </ul>
                         </li>
                         <li class="uslugi-item">
-                            <img src="#" width="100" height="100" alt="Программирование">
                             <h2>Программирование</h2>
                             <ul>
-                                <li>
-                                    <h3>Разработка программ на C#</h3>
-                                </li>
-                                <li>
-                                    <h3>Разработка программ на Python</h3>
-                                </li>
-                                <li>
-                                    <h3>Разработка игровых приложений</h3>
-                                </li>
+                                <li><h3>Разработка программ на C#</h3></li>
+                                <li><h3>Разработка программ на Python</h3></li>
+                                <li><h3>Разработка игровых приложений</h3></li>
                             </ul>
                         </li>
                         <li class="uslugi-item">
-                            <img src="#" width="100" height="100" alt="Художества">
                             <h2>Рисование</h2>
                             <ul>
-                                <li>
-                                    <h3>Создание логотипов</h3>
-                                </li>
-                                <li>
-                                    <h3>Работа с Adobe Photoshop</h3>
-                                </li>
-                                <li>
-                                    <h3>Работа с Cinema4D и Blender</h3>
-                                </li>
+                                <li><h3>Создание логотипов</h3></li>
+                                <li><h3>Работа с Adobe Photoshop</h3></li>
+                                <li><h3>Работа с Cinema4D и Blender</h3></li>
                             </ul>
                         </li>
                     </ul>
-                    <a href="portfolio/portfolio.html">Подробнее</a>
+                    <a href="portfolio.html">Подробнее</a>
                 </section>
             </div>
 
+            
+
             <section>
-                <h1 id="section4">Портфолио</h1>
-                <style>
-                    .slider-container {
-                        width: 600px;
-                        overflow: hidden;
-                        position: relative;
-                        margin: 0 auto;
-                    }
+               
                 
-                    .slider {
-                        display: flex;
-                        transition: transform 0.5s ease;
-                    }
+                <h2 class="portfolio" id="section4">Портфолио</h2>
+
                 
-                    .slide {
-                        flex: 0 0 auto;
-                        width: 600px;
-                    }
-                
-                    .slider-btn {
-                        position: absolute;
-                        top: 50%;
-                        background-color: rgba(0, 0, 0, 0.5);
-                        color: #fff;
-                        padding: 10px;
-                        border: none;
-                        cursor: pointer;
-                    }
-                
-                    .slider-btn-left {
-                        left: 0;
-                    }
-                
-                    .slider-btn-right {
-                        right: 0;
-                    }
-                </style>
                 
                 
                 <div class="slider-container">
+                
                     <div class="slider">
                         <div class="slide"><img src="img/hasbi.jpg" alt="Image 1"></div>
                         <div class="slide"><img src="img/hasbi.jpg" alt="Image 2"></div>
@@ -179,37 +132,11 @@
                     <button class="slider-btn slider-btn-right" onclick="nextSlide()">→</button>
                 </div>
                 
-                <script>
-                    let slideIndex = 0;
                 
-                    function showSlides() {
-                        const slides = document.querySelectorAll('.slide');
-                        if (slideIndex >= slides.length) {
-                            slideIndex = 0;
-                        }
-                        if (slideIndex < 0) {
-                            slideIndex = slides.length - 1;
-                        }
-                        const offset = -slideIndex * slides[0].offsetWidth;
-                        document.querySelector('.slider').style.transform = `translateX(${offset}px)`;
-                    }
-                
-                    function nextSlide() {
-                        slideIndex++;
-                        showSlides();
-                    }
-                
-                    function prevSlide() {
-                        slideIndex--;
-                        showSlides();
-                    }
-                
-                    showSlides();
-                </script>
                 
                 
             </section>
-            
+            <script src="js/script.js"></script>
         </main>
 
         <footer class="main-footer">
@@ -225,7 +152,7 @@
             </ul>
         </div>
         <div class="footer-social">
-            <b>Давайте дружить!</b>
+            <p>Давайте дружить!</p>
             <ul>
                 <li><a class="social-button" href="https://vk.com/skankhunt___42">Вконтакте</a></li>
                 <li><a class="social-button" href="https://t.me/johnyclouni">Телеграм</a></li>

@@ -1,5 +1,5 @@
 body {
-    font-family: Arial;
+    font-family: "Rubik", sans-serif;
     font-size: 17px;
     padding: 8px;
   }
@@ -59,25 +59,31 @@ body {
   
   .icon-container {
     margin-bottom: 20px;
-    padding: 7px 0;
+    padding: 20px 0;
     font-size: 24px;
   }
   
   .btn {
-    background-color: #04AA6D;
-    color: white;
+    background-color:  #b9954e;
+    color: rgb(240, 240, 240);
     padding: 12px;
     margin: 10px 0;
     border: none;
     width: 100%;
     border-radius: 3px;
     cursor: pointer;
-    font-size: 17px;
-  }
-  
-  .btn:hover {
-    background-color: #45a049;
-  }
+    border: 1px solid #000;
+    font: inherit;
+    font-size: 20px;
+    border-radius: 20px; /* Скругление углов */
+    text-decoration: none; /* Убираем подчеркивание */
+    transition: background-color 0.3s;
+
+
+}
+.btn:hover {
+    background-color: #a8bcc3;
+}
   
   a {
     color: #2196F3;
