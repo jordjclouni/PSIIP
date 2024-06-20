@@ -16,13 +16,197 @@ body {
     background-position: center;
 }
 
+
+
+
+
+
+
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+   
+}
+/* форма*/
+.product-container {
+    position: relative;
+}
+.product-container {
+    margin-bottom: 120px;
+}
+
+.product-form {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 125%;
+    background-color: #fff;
+    padding: 20px;
+    display: none;
+}
+
+.product-container:hover .product-form {
+    display: block;
+}
+
+.product-form .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.product-form .close:hover {
+    color: red;
+}
+
+.product-details {
+    text-align: center;
+}
+
+.product-details img {
+    width: 40%;
+    height: 240px;
+    object-fit: cover;
+    
+}
+
+.product-details h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.product-details .price {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.product-details .price .discount-price {
+    font-size: 24px;
+    color: red;
+}
+
+.product-details .price .original-price {
+    text-decoration: line-through;
+}
+
+.product-details .price .discount {
+    font-size: 18px;
+    color: red;
+}
+
+
+.firstline, .secondline {
+    text-align: center;
+}
+
+.firstline h3, .secondline h3 {
+    display: block;
+    margin: 0px;
+}
+
+.firstline p, .secondline p {
+    display: inline-block;
+    margin: 5px;
+}
+
+
+
+
+
+.add-to-cart, .more-details {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-to-cart {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.add-to-cart:hover {
+    background-color: #3e8e41;
+}
+
+.more-details {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.more-details:hover {
+    background-color: #0069d9;
+}
+
   
-  h2.features {
+
+
+
+  .fixed-form {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    background-color: #800080; /* purple background */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.form-header {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="tel"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.consent {
+    margin-bottom: 10px;
+}
+
+.consent input {
+    margin-right: 5px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #c71585; /* deeper purple button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #b22222; /* hover effect */
+}
+
+h2.features {
     font-family: "Overpass", sans-serif;
     font-weight: 600;
     font-style: normal;
   }
-
 a {
     text-decoration: none;
 }
@@ -118,7 +302,7 @@ ul {
 
 }
 
-.button {
+.button  {
     margin-top: 10px; /* Отступ сверху для кнопки */
 }
 
@@ -129,10 +313,10 @@ ul {
      
 }
 
-.container .button {
+.container .button  {
     margin-top: 10px; /* Подберите нужный вам отступ сверху */
 }
-.button{
+.button {
     
     border: 1px solid #000;
     font: inherit;

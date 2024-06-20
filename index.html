@@ -10,8 +10,35 @@
         <link href="css/style-grid.css" rel="stylesheet">
 
         <script src="js/script.js"></script>
+
+
+        
     </head>
     <body>
+
+        
+        <body>
+            <div class="fixed-form">
+                <div class="form-header">
+                    ЗАКАЗАТЬ ЗВОНОК
+                </div>
+                <form action="#" method="post">
+                    <label for="name">Ваше имя</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="phone">Номер телефона</label>
+                    <input type="tel" id="phone" name="phone" required pattern="^\+?[0-9\s\-\(\)]+$">
+                    
+                    <div class="consent">
+                        <input type="checkbox" id="consent" name="consent" required>
+                        <label for="consent">Я даю согласие на обработку персональных данных в соответствии с <a href="#">политикой конфиденциальности</a></label>
+                    </div>
+                    
+                    <button type="submit">ЗАКАЗАТЬ ЗВОНОК</button>
+                </form>
+            </div>
+        </body>
+        
         <!--верхняя панель сайта-->
         <header class="main-header">
             <!--Навигация сайта-->
@@ -25,6 +52,8 @@
                         <li><a href="#section3">Услуги</a></li>
                         <li><a href="#section4">Портфолио</a></li>
                         <li><a href="#section5">Контакты</a></li>
+                        <li><a href="lr10.html">10-12</a></li>
+                        <li><a href="lr13.html">13-14</a></li>
                     </ul>
                 </nav>
             </div>
@@ -43,6 +72,7 @@
 
             
             <section>
+                
                 <h2 class="features" id="section2">Обо мне</h2>
                 <ul class="features-list">
                     <li class="feature-item">
@@ -66,9 +96,10 @@
                     </li>
                 </ul>
         
-
                 
-                <a class="button" type="button" href="#section4">Читать далее</a>
+                
+                
+                
             </section>
 
 
@@ -109,6 +140,36 @@
             </div>
 
             
+        
+            <div class="product-container">
+                <img src="img/bed.avif  " alt="Product Image" id="productImage" width="400" height="400">
+
+                <div class="product-form" id="productForm">
+                    <span class="close" id="closeForm">&times;</span>
+                    <div class="product-details">
+                        <img src="img/bed.avif" alt="Product Image" id="productImage">
+                        <h2>Кровать Льери 160 Velvet Sand</h2>
+                        
+                        <p class="price"><span class="discount-price">1326 руб.</span> <span class="original-price">1489 руб.</span> <span class="discount">-10%</span></p>
+                        <div class="dimensions">
+                            <div class="firstline">
+                            <h3>Размеры</h3>
+                            <p>Длина: 225 см</p>
+                            <p>Ширина: 179 см</p>
+                            <p>Высота: 112 см</p>
+                            </div>
+                            <div class="secondline">
+                            <h3>Спальное место</h3>
+                            <p>Длина: 200 см</p>
+                            <p>Ширина: 160 см</p>
+                            </div>
+                        </div>
+                        <button class="add-to-cart">В корзину</button>
+                        <button class="more-details">Подробнее о товаре</button>
+                    </div>
+                </div>
+            </div>
+            
 
             <section>
                
@@ -136,8 +197,55 @@
                 
                 
             </section>
+            <!--<section>
+                
+                    
+
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r124/three.min.js"></script>
+            
+            
+               
+                <script>
+                    var scene, camera, renderer, cube;
+
+                    function init() 
+                    {
+                        scene = new THREE.Scene();
+                        camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 1, 1000);
+                        renderer = new THREE.WebGLRenderer();
+                        renderer.setSize(window.innerWidth, window.innerHeight);
+                        document.body.appendChild(renderer.domElement);
+
+                        var geometry = new THREE.BoxGeometry(1, 1, 1);
+                        var material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+                        cube = new THREE.Mesh(geometry, material);
+                        scene.add(cube);
+
+                        // Добавляем белый фон
+                        var whiteMaterial = new THREE.MeshBasicMaterial({ color: 0xffffff });
+                        var whitePlane = new THREE.Mesh(new THREE.PlaneGeometry(90, 100), whiteMaterial);
+                        whitePlane.position.z = -5; // Перемещаем плоскость назад, чтобы она была за кубом
+                        scene.add(whitePlane);
+
+                        camera.position.z = 5;
+                    }
+
+                    function animate() {
+                        requestAnimationFrame(animate);
+                        cube.rotation.x += 0.01;
+                        cube.rotation.y += 0.01;
+                        renderer.render(scene, camera);
+                    }
+
+                    init();
+                    animate();
+                </script>
+            </section> -->
+
             <script src="js/script.js"></script>
         </main>
+
+
 
         <footer class="main-footer">
         <h1 id="section5"></h1>
